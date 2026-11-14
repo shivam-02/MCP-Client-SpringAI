@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: client-shivam
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+    mcp:
+      client:
+        name: mcp-client-shivam
+        version: 0.0.1
+        toolcallback:
+          enabled: true
+        streamable-http:
+          connections:
+            dvaas:
+              url: https://mcp.danvega.dev/mcp
+
+
+
